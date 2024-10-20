@@ -1,0 +1,74 @@
+\hypertarget{classLoadBalancer}{}\doxysection{Load\+Balancer Class Reference}
+\label{classLoadBalancer}\index{LoadBalancer@{LoadBalancer}}
+
+
+Manages load balancing operations, including IP generation and handling multiple load balancing cycles.  
+
+
+
+
+{\ttfamily \#include $<$Load\+Balancer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLoadBalancer_a3e712a117f5fcb80b9882963948a0447}{generate\+Random\+I\+P\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random IP address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoadBalancer_a2a2485e16cc2c9b9e12b9a97ec6fe190}{run}} (int cycles, int webservers)
+\begin{DoxyCompactList}\small\item\em Executes load balancing operations over a set number of cycles and manages a given number of web servers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages load balancing operations, including IP generation and handling multiple load balancing cycles. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoadBalancer_a3e712a117f5fcb80b9882963948a0447}\label{classLoadBalancer_a3e712a117f5fcb80b9882963948a0447}} 
+\index{LoadBalancer@{LoadBalancer}!generateRandomIPAddress@{generateRandomIPAddress}}
+\index{generateRandomIPAddress@{generateRandomIPAddress}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{generateRandomIPAddress()}{generateRandomIPAddress()}}
+{\footnotesize\ttfamily std\+::string Load\+Balancer\+::generate\+Random\+I\+P\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random IP address. 
+
+Generate a random IP address.
+
+The generated IP address is in the form of \char`\"{}\+X.\+X.\+X.\+X\char`\"{} where each \textquotesingle{}X\textquotesingle{} is a random number between 0 and 255.
+
+\begin{DoxyReturn}{Returns}
+A randomly generated IP address as a string.
+
+A randomly generated IP address as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoadBalancer_a2a2485e16cc2c9b9e12b9a97ec6fe190}\label{classLoadBalancer_a2a2485e16cc2c9b9e12b9a97ec6fe190}} 
+\index{LoadBalancer@{LoadBalancer}!run@{run}}
+\index{run@{run}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Load\+Balancer\+::run (\begin{DoxyParamCaption}\item[{int}]{cycles,  }\item[{int}]{webservers }\end{DoxyParamCaption})}
+
+
+
+Executes load balancing operations over a set number of cycles and manages a given number of web servers. 
+
+Run load balancing cycles.
+
+This function simulates incoming network requests, distributes them across web servers, dynamically adds/removes servers based on request load, and processes each request in the queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cycles} & The number of load balancing cycles to run. \\
+\hline
+{\em webservers} & The initial number of web servers available in the system.\\
+\hline
+{\em cycles} & The number of load balancing cycles to run. \\
+\hline
+{\em webservers} & The number of web servers in the load balancing system. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LoadBalancer_8h}{Load\+Balancer.\+h}}\item 
+\mbox{\hyperlink{LoadBalancer_8cpp}{Load\+Balancer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,132 @@
+\hypertarget{classWebServer}{}\doxysection{Web\+Server Class Reference}
+\label{classWebServer}\index{WebServer@{WebServer}}
+
+
+Represents a web server system, tracking the total number of servers and how many are in use.  
+
+
+
+
+{\ttfamily \#include $<$Web\+Server.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWebServer_ae109a970062ecb1d53b6cfd8dcde9584}{Web\+Server}} (int total)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classWebServer}{Web\+Server}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWebServer_a5b6ee18042d77b20d6aa02d93861e0ea}{get\+Total\+Servers}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the total number of web servers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWebServer_a4fddfee684804148a44a2d255438a73e}{get\+Servers\+In\+Use}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the number of web servers currently in use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebServer_a0d4f693c90423073b0840a56969150a6}{set\+Total\+Servers}} (int total)
+\begin{DoxyCompactList}\small\item\em Sets the total number of web servers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebServer_aeb39e92ee52a5610e750e0de45e02bd1}{set\+Servers\+In\+Use}} (int in\+Use)
+\begin{DoxyCompactList}\small\item\em Sets the number of web servers currently in use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a web server system, tracking the total number of servers and how many are in use. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWebServer_ae109a970062ecb1d53b6cfd8dcde9584}\label{classWebServer_ae109a970062ecb1d53b6cfd8dcde9584}} 
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{WebServer()}{WebServer()}}
+{\footnotesize\ttfamily Web\+Server\+::\+Web\+Server (\begin{DoxyParamCaption}\item[{int}]{total }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classWebServer}{Web\+Server}} object. 
+
+Initializes the \mbox{\hyperlink{classWebServer}{Web\+Server}} object with a specified total number of servers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & Total number of web servers.\\
+\hline
+\end{DoxyParams}
+Initializes the \mbox{\hyperlink{classWebServer}{Web\+Server}} with a specified total number of servers and sets the number of servers in use to zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & Total number of web servers. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebServer_a4fddfee684804148a44a2d255438a73e}\label{classWebServer_a4fddfee684804148a44a2d255438a73e}} 
+\index{WebServer@{WebServer}!getServersInUse@{getServersInUse}}
+\index{getServersInUse@{getServersInUse}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{getServersInUse()}{getServersInUse()}}
+{\footnotesize\ttfamily int Web\+Server\+::get\+Servers\+In\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the number of web servers currently in use. 
+
+\begin{DoxyReturn}{Returns}
+The number of web servers in use.
+
+The number of web servers currently in use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebServer_a5b6ee18042d77b20d6aa02d93861e0ea}\label{classWebServer_a5b6ee18042d77b20d6aa02d93861e0ea}} 
+\index{WebServer@{WebServer}!getTotalServers@{getTotalServers}}
+\index{getTotalServers@{getTotalServers}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{getTotalServers()}{getTotalServers()}}
+{\footnotesize\ttfamily int Web\+Server\+::get\+Total\+Servers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the total number of web servers. 
+
+\begin{DoxyReturn}{Returns}
+The total number of web servers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebServer_aeb39e92ee52a5610e750e0de45e02bd1}\label{classWebServer_aeb39e92ee52a5610e750e0de45e02bd1}} 
+\index{WebServer@{WebServer}!setServersInUse@{setServersInUse}}
+\index{setServersInUse@{setServersInUse}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{setServersInUse()}{setServersInUse()}}
+{\footnotesize\ttfamily void Web\+Server\+::set\+Servers\+In\+Use (\begin{DoxyParamCaption}\item[{int}]{in\+Use }\end{DoxyParamCaption})}
+
+
+
+Sets the number of web servers currently in use. 
+
+Updates the number of web servers that are actively handling requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Use} & The number of web servers in use to set.\\
+\hline
+\end{DoxyParams}
+Updates the number of web servers that are currently active or processing requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Use} & The number of web servers in use to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebServer_a0d4f693c90423073b0840a56969150a6}\label{classWebServer_a0d4f693c90423073b0840a56969150a6}} 
+\index{WebServer@{WebServer}!setTotalServers@{setTotalServers}}
+\index{setTotalServers@{setTotalServers}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{setTotalServers()}{setTotalServers()}}
+{\footnotesize\ttfamily void Web\+Server\+::set\+Total\+Servers (\begin{DoxyParamCaption}\item[{int}]{total }\end{DoxyParamCaption})}
+
+
+
+Sets the total number of web servers. 
+
+Updates the total number of web servers in the system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & The total number of web servers to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{WebServer_8h}{Web\+Server.\+h}}\item 
+\mbox{\hyperlink{WebServer_8cpp}{Web\+Server.\+cpp}}\end{DoxyCompactItemize}

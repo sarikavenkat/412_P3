@@ -1,0 +1,66 @@
+\hypertarget{structRequest}{}\doxysection{Request Struct Reference}
+\label{structRequest}\index{Request@{Request}}
+
+
+Represents a network request, containing source and destination I\+Ps, processing time, and completion status.  
+
+
+
+
+{\ttfamily \#include $<$Web\+Server.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structRequest_aa629a482e6d9b303abaf93ec25a82c1b}{Request}} (const std\+::string \&in, const std\+::string \&out, int t)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{structRequest}{Request}} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structRequest_aa83b5e8331e7f13fb5742984f955d0c1}\label{structRequest_aa83b5e8331e7f13fb5742984f955d0c1}} 
+std\+::string \mbox{\hyperlink{structRequest_aa83b5e8331e7f13fb5742984f955d0c1}{ip\+In}}
+\begin{DoxyCompactList}\small\item\em Source IP address. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structRequest_af585c7ba4ed14c760cf8d72b232091b4}\label{structRequest_af585c7ba4ed14c760cf8d72b232091b4}} 
+std\+::string \mbox{\hyperlink{structRequest_af585c7ba4ed14c760cf8d72b232091b4}{ip\+Out}}
+\begin{DoxyCompactList}\small\item\em Destination IP address. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structRequest_a3cfb576ed0b5e08612f3de8bc7cd72e2}\label{structRequest_a3cfb576ed0b5e08612f3de8bc7cd72e2}} 
+int \mbox{\hyperlink{structRequest_a3cfb576ed0b5e08612f3de8bc7cd72e2}{time}}
+\begin{DoxyCompactList}\small\item\em Total time required to process the request. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structRequest_a5cb999727cacbd7dfd86bbd6038a219b}\label{structRequest_a5cb999727cacbd7dfd86bbd6038a219b}} 
+int \mbox{\hyperlink{structRequest_a5cb999727cacbd7dfd86bbd6038a219b}{time\+Left}}
+\begin{DoxyCompactList}\small\item\em Remaining time for the request to be processed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structRequest_a6d2a4e7d1055fd10abfa7762ef145765}\label{structRequest_a6d2a4e7d1055fd10abfa7762ef145765}} 
+bool \mbox{\hyperlink{structRequest_a6d2a4e7d1055fd10abfa7762ef145765}{completed}}
+\begin{DoxyCompactList}\small\item\em Whether the request has been completed or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a network request, containing source and destination I\+Ps, processing time, and completion status. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structRequest_aa629a482e6d9b303abaf93ec25a82c1b}\label{structRequest_aa629a482e6d9b303abaf93ec25a82c1b}} 
+\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily Request\+::\+Request (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{in,  }\item[{const std\+::string \&}]{out,  }\item[{int}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \mbox{\hyperlink{structRequest}{Request}} struct. 
+
+Initializes the \mbox{\hyperlink{structRequest}{Request}} object with the given source IP, destination IP, and total time. Also sets the time\+Left to the total time and marks the request as not completed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Source IP address. \\
+\hline
+{\em out} & Destination IP address. \\
+\hline
+{\em t} & Total time for the request. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{WebServer_8h}{Web\+Server.\+h}}\end{DoxyCompactItemize}
