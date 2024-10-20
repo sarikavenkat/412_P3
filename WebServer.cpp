@@ -7,19 +7,13 @@
  */
 
 /**
- * @brief Constructs a WebServer object.
- * 
- * Initializes the WebServer with a specified total number of servers and sets the number of servers in use to zero.
- * 
+ * @brief Constructor for the WebServer class.
  * @param total Total number of web servers.
  */
 WebServer::WebServer(int total) : totalServers(total), serversInUse(0) {}
 
-// Getter methods
-
 /**
- * @brief Retrieves the total number of web servers.
- * 
+ * @brief Get the total number of web servers.
  * @return The total number of web servers.
  */
 int WebServer::getTotalServers() const {
@@ -27,21 +21,15 @@ int WebServer::getTotalServers() const {
 }
 
 /**
- * @brief Retrieves the number of web servers currently in use.
- * 
- * @return The number of web servers currently in use.
+ * @brief Get the number of web servers currently in use.
+ * @return The number of web servers in use.
  */
 int WebServer::getServersInUse() const {
     return serversInUse;
 }
 
-// Setter methods
-
 /**
- * @brief Sets the total number of web servers.
- * 
- * Updates the total number of web servers in the system.
- * 
+ * @brief Set the total number of web servers.
  * @param total The total number of web servers to set.
  */
 void WebServer::setTotalServers(int total) {
@@ -49,10 +37,7 @@ void WebServer::setTotalServers(int total) {
 }
 
 /**
- * @brief Sets the number of web servers currently in use.
- * 
- * Updates the number of web servers that are currently active or processing requests.
- * 
+ * @brief Set the number of web servers currently in use.
  * @param inUse The number of web servers in use to set.
  */
 void WebServer::setServersInUse(int inUse) {

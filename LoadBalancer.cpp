@@ -26,6 +26,13 @@ std::string LoadBalancer::generateRandomIPAddress() {
     return ipAddress.str();
 }
 
+/**
+ * @brief Checks if an IP address is in the private range 10.0.0.0 to 10.255.255.255.
+ * 
+ * @param ipAddress The IP address to check.
+ * @return True if the IP address is in range, false otherwise.
+ */
+
 // Check if IP address is in the range 10.0.0.0 to 10.255.255.255
 bool isInRange(const std::string& ipAddress) {
     std::istringstream ss(ipAddress);

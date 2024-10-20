@@ -23,7 +23,7 @@ int main() {
     int cycles;       ///< Number of clock cycles for the simulation.
     int webservers;   ///< Number of web servers for the simulation.
 
-    cout << "Howdy!!" << endl;
+    cout << "Howdy!" << endl;
 
     // Get the number of clock cycles
     cout << "How many clock cycles do you want?" << endl;
